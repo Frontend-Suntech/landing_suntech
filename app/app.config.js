@@ -5,10 +5,10 @@ angular.
   config(['$routeProvider',
     function config($routeProvider) {
       $routeProvider.
-      when('/', {
+      when('/landing', {
         template: '<init-page></init-page>'
       }).
-      otherwise('/');
+      otherwise('/landing');
     }
   ]);
 
@@ -19,8 +19,8 @@ angular.
       $locationProvider.hashPrefix('');
       $locationProvider.html5Mode({
         enabled: true,
-        requireBase: true,
-        rewriteLinks: false
+        requireBase: false,
+        rewriteLinks: true
       });
     }
   ]);
