@@ -3,5 +3,5 @@
 angular.
   module('initPage').
   component('initPage', {
-    templateUrl: 'init-page/init-page.template.html',
+    templateUrl: '/app/init-page/init-page.template.html',
   });
